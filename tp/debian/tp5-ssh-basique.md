@@ -94,6 +94,28 @@ Se connecter en utilisant la commande `ssh server11`.
 et se connecter au deux machines. Vérifier que les connexions correspondent
 bien aux machines, puis se déconnecter.
 
+Pour vérifier la clé empreinte *key fingerprint*, on a besoin de l'algorithme (ex: ED25519) et de la clé de hash (ex: SHA256). Ellle permet d'identifier notre connexion. Pour retrouver la clé correspondante:
+
+*ED25519*:
+
+    - SHA256: ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub
+    - MD5: ssh-keygen -E md5 -lf /etc/ssh/ssh_host_ed25519_key.pub
+
+*ECDSA*:
+
+    - SHA256: ssh-keygen -lf /etc/ssh/ssh_host_ecdsa_key.pub
+    - MD5: ssh-keygen -E md5 -lf /etc/ssh/ssh_host_ecdsa_key.pub
+
+*RSA*:
+
+    - SHA256: ssh-keygen -lf /etc/ssh/ssh_host_rsa_key.pub
+    - MD5: ssh-keygen -E md5 /etc/ssh/ssh_host_rsa_key.pub
+
+*DSA*:
+
+    - SHA256: ssh-keygen -lf /etc/ssh/ssh_host_dsa_key.pub
+    - MD5: ssh-keygen -E md5 /etc/ssh/ssh_host_dsa_key.pub
+
 ## Etape 2 : transfert de fichiers avec scp
 
 OpenSSH permet bien plus que simplement taper des commandes en toute sécurité.
