@@ -11,7 +11,9 @@ commandes :
 
 
 - /etc/apache2/sites-enabled/000-default.conf -> fichier de configuration 
-  Pour modifier le chemin 
+ DocumentRoot indique la racine a aller voir
+ DirectoryIndex indique le fichier à lire
+ il est possible de rajouter plusieurs port de lecture -> \*:3434 par exemple dans une aure balise virtualbox. Pour que ca fonctionne on doit rajouter un port dans le fichier ports.conf. En ajouter `Listen *port_souhaité*`
 
 
 Objectifs :
