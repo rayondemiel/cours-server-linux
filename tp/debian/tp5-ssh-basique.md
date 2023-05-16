@@ -243,3 +243,15 @@ commande `ssh server11`, et ainsi de suite pour les deux autres machines.
 
 Pour aller plus loin : recommencer toute l'étape 4 en spécifiant une phrase de
 passe à chaque clé.
+
+exemple:
+```
+Host nameserver
+  Hostname 192.168.122.155
+  Port 22
+  User user
+  IdentityFile ~/.ssh/nameofssh
+#pour eviter bug multi connection echec
+  IdentitiesOnly=yes
+
+```
