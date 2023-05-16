@@ -7,7 +7,7 @@ commandes :
 - curl address_ip (ou localhost si cas de la meme machine) : port
 - apachectl start | stop | restart   (mode admin)
 - top -u www-data
-- systemct status apache2
+- systemctl status apache2
 
 
 Objectifs :
