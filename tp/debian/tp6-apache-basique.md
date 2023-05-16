@@ -2,6 +2,14 @@
 
 # TP 6 : Installation et paramétrage basique du serveur web Apache
 
+commandes :
+
+- curl address_ip (ou localhost si cas de la meme machine) : port
+- apachectl start | stop | restart
+- top -u www-data
+- systemct status apache2
+
+
 Objectifs :
 
 - installer le serveur HTTP Apache ;
