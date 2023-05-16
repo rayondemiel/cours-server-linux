@@ -10,6 +10,10 @@ commandes :
 - systemctl status apache2
 
 
+- /etc/apache2/sites-enabled/000-default.conf -> fichier de configuration 
+  Pour modifier le chemin 
+
+
 Objectifs :
 
 - installer le serveur HTTP Apache ;
