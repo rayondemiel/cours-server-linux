@@ -8,6 +8,9 @@ Objectifs :
 - configurer un virtual host HTTPS ;
 - configurer la redirection HTTP vers HTTPS.
 
+-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -> creer son certificat x509autosigné
+
+
 ## Introduction
 
 L'HyperText Transfer Protocol Secure (HTTPS, littéralement « protocole de
