@@ -8,7 +8,10 @@ Objectifs :
 - configurer un virtual host HTTPS ;
 - configurer la redirection HTTP vers HTTPS.
 
--sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -> creer son certificat x509autosigné
+- `openssl req -x509 -newkey rsa:4096 -keyout myKey.pem -out cert.pem -days 365 -nodes` -> creer son certificat x509autosigné
+- `openssl pkcs12 -export -out keyStore.p12 -inkey myKey.pem -in cert.pem` si je veux l'encoder en PKCS12
+
+Par contre, le certificat autosigné ce n'est pas le top pour aussurer la sécurité aux gens -> les navigateurs vont renvoyer un message d'erreur. 
 
 
 ## Introduction
