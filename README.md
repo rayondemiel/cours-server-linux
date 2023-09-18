@@ -8,6 +8,8 @@ l'installation d'un serveur web sous Linux, utilisant PHP et un serveur de base
 de données MariaDB. Ce cours tire parti des technologies de virtualisation et
 de conteneurisation.
 
+autre cours : https://linux.goffinet.org/administration/
+
 Liste des TP :
 
 * TP 0 : [installation de QEMU/KVM et de Libvirt, sur un OS
